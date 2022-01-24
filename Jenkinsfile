@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull code') {
             steps {
-                git branch: '*/${branch}', credentialsId: 'github', url: 'https://github.com/xiaobai1315/testJenkins.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/xiaobai1315/testJenkins.git'
             }
         }
         stage('maven') {
